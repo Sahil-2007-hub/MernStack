@@ -22,18 +22,7 @@ console.log('Is Student:', isStudent);
 
 let num = 9999999999999999;
 console.log(num);
-
-console.log(typeof num);
-
-console.log(Number.MAX_SAFE_INTEGER);
-
-let number = BigInt("999999999999999999999");
-console.log(number)
-console.log(typeof number);
-
-const user = {
-    username : "Sahil Mandhare",
-    age : 12,
+let user = {
     isLoggedIn : true
 }
 
