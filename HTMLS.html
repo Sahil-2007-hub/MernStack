@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>      
+            <li>four</li>
+        </ul>
+    </body>
+    <script>
+        const ulList = document.querySelector('ul');
+        console.log(ulList.children);
+        console.log(ulList.childNodes);
+        
+    </script>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="first">first heading</h1>
+    </body>
+    <script>
+        const secondH = document.createElement('h2');
+        secondH.id = "second-heading";
+        secondH.className = "para";
+
+        const textNode = document.createTextNode("second heading");
+        secondH.appendChild(textNode);
+        document.body.appendChild(secondH);
+
+        const h1 = document.getElementById('first');
+        h1.replaceWith(secondH);
+    </script>
+</html>

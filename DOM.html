@@ -1,0 +1,104 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-div">
+        <h1 id="first-heading">Dom learning</h1>
+        <p class="para">para 1</p>
+        <h2>seond heading</h2>
+    </div>
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+        </ul>
+    </div>
+</body>
+<script>
+	const firstheading = document.getElementsById("first-heading");
+    console.log(firstheading);
+    console.log(firstheading.id);
+    console.log(firstheading.className);
+    firstheading.style.color = "green";
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Documnet</title>
+    </head>
+    <body>
+        <h1 id = "first-heading">Hello world</h1>
+        <p class = "para">DOM learning is imp</p>
+        <p class = "para">Welecome to Home</p>
+        <p class = "para">Third Paragraph</p>
+    <script>
+        const para = document.querySelector('.para')
+        console.log(para);  
+        
+       // para[0].style.border = "solid";
+       // para[0].style.padding = "10px";
+
+       para.forEach((val)=> {
+        val.style.backgroundColor = "yellow";
+        val.style.border = "solid";
+       })
+    </script></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= = "width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <button type = "submit" style = "padding: 5px; border-radius: 10px; font-size: 20px;text-align: center;">Green</button>
+        <button type = "submit" style = "padding: 5px; border-radius: 10px; font-size: 20px;text-align: center;">Blue</button>
+        <button type = "submit" style = "padding: 5px; border-radius: 10px; font-size: 20px;text-align: center;">Red</button>
+    </body>  
+    <script>
+        const btn = document.getElementsByTagName('button');
+        console.log(btn);
+        btn[0].addEventListener('click', () => {
+            document.body.style.backgroundColor = "green";
+        });
+        btn[1].addEventListener('click', () => {
+            document.body.style.backgroundColor = "blue";
+        });
+        btn[2].addEventListener('click', () => {
+            document.body.style.backgroundColor = "red";
+        });
+    </script>
+</html> -->
+
+?
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <input type = "text" placeholder="Enter your name" required />
+            <button type = "submit">Submit</button>
+        </form>
+    </body>
+    <script>
+        const form = document.querySelector('form');
+        console.log(form);
+
+        form.addEventListener('submit', () => {
+            alert("Form submitted successfully!");
+        })
+            
+    </script>
+</html>
